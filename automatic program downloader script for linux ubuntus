@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "A rendszer Frissítése"
+
+apt update 
+apt upgrade
+
+echo "a ppa-k hozzáadása"
+
+add-apt-repository -y ppa:ubuntuhandbook1/audacity
+add-apt-repository -y ppa:lutris-team/lutris
+add-apt-repository -y ppa:obsproject/obs-studio
+
+sudo apt update
+
+echo "a programok telepítésének megkezdése"
+
+apt install clamav clamtk audacity discord vlc clementine cheese virtualbox viber pinta blender skype spotify steam gimp kdenlive playonlinux lutris  smplayer kate openshot obs-studio doublecmd-qt ffmpeg winff
+
+echo "a programok telepítése befejeződött"
+
+sudo reboot

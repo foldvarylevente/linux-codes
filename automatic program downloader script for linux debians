@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "A rendszer Frissítése"
+
+apt update 
+apt upgrade
+
+echo "a programok telepítésének megkezdése"
+
+apt-get install clamav clamtk audacity discord vlc clementine cheese virtualbox viber pinta blender skype spotify steam gimp kdenlive playonlinux lutris  smplayer kate openshot obs-studio doublecmd-qt ffmpeg winff
+
+echo "a programok telepítése befejeződött"
+
+sudo reboot
